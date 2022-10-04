@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charSet="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta httpEquiv="X-UA-Compatiable" content="ie=edge"/>
+        <meta name="description" content="This is a simple to do app"/>
+        <title>Bootstrap Demo</title>
+
+        <!-- bootstrap core css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
+        <style>
+            .card-body {
+            background: rgba(39, 36, 36, 0.02); }
+            .card-body ol li {
+                margin-bottom: 10px;
+                padding-left: 10px;
+                color: rgba(27, 25, 25, 0.8); }
+                .card-body ol li:last-child {
+                margin-bottom: 0; }
+        </style>
+         <style>
+            .navbar { background-color: #484848; }
+            .navbar .navbar-nav .nav-link { color: #fff; }
+            .navbar .navbar-nav .nav-link:hover { color: #fbc531; }
+            .navbar .navbar-nav .active > .nav-link { color: #fbc531; }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand text-white" href="#">
+                        Bootstrap5 Demo
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="nvbCollapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Forms Demo
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="form-control.html">Form-Control</a></li>
+                                  <li><a class="dropdown-item" href="select.html">Select</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Content Demo
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="figure.html">Figure</a></li>
+                                  <li><a class="dropdown-item" href="image.html">Image</a></li>
+                                  <li><a class="dropdown-item" href="table.html">Table</a></li>
+                                  <li><a class="dropdown-item" href="typography.html">Typography</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Components Demo
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="accordion.html">Accordion</a></li>
+                                  <li><a class="dropdown-item" href="alert.html">Alert</a></li>
+                                  <li><a class="dropdown-item" href="badge.html">Badge</a></li>
+                                  <li><a class="dropdown-item" href="breadcrumb.html">Breadcrumb</a></li>
+                                  <li><a class="dropdown-item" href="button.html">Button Group</a></li>
+                                  <li><a class="dropdown-item" href="card.html">Card</a></li>
+                                  <li><a class="dropdown-item" href="carousel.html">Carousel</a></li>
+                                  <li><a class="dropdown-item" href="collapse.html">Collapse</a></li>
+                                  <li><a class="dropdown-item" href="dropdown.html">Dropdown</a></li>
+                                  <li><a class="dropdown-item" href="listgroup.html">List Group</a></li>
+                                  <li><a class="dropdown-item" href="modal.html">Modal</a></li>
+                                  <li><a class="dropdown-item" href="pagination.html">Pagination</a></li>
+                                  <li><a class="dropdown-item" href="processbar.html">Processbar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Demo1 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="heading-section mb-2 pb-lg-2">Accordion Demo 1</h2>
+                </div>
+                <div class="accordion accordion-flush" id="accordion1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Bootstrap
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accrodion1">
+                            <div class="accordion-body">
+                                <strong> Bootstrap:</strong>
+                                Quickly design and customize responsive mobile-first sites with Bootstrap,
+                                the world’s most popular front-end open source toolkit,
+                                featuring Sass variables and mixins, responsive grid system,
+                                extensive prebuilt components, and powerful JavaScript plugins.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                PHP
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion1">
+                            <div class="accordion-body">
+                                <strong>PHP:</strong>
+                                The PHP development team announces the immediate availability of PHP 8.1.3.
+                                This is a security release. All PHP 8.1 users are encouraged to upgrade to this version.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Laravel
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion1">
+                            <div class="accordion-body">
+                                <strong>Laravel: </strong>
+                                Laravel is a web application framework with expressive, elegant syntax.
+                                We’ve already laid the foundation — freeing you to create without sweating the small things.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo2 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="heading-section mb-2 pb-lg-2">Accordion Demo 2</h2>
+                </div>
+                <div class="accordion accordion-flush" id="accordion2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header card-header" id="heading1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                Question1: which animal is the fastest?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accrodion2">
+                            <div class="accordion-body card-body py-5 px-4">
+                                <ol>
+                                    <li>Turtle </li>
+                                    <li>Rabbit </li>
+                                    <li>Elephant</li>
+                                    <li>Zebra </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header card-header" id="heading2">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Question2: Which animal has the greatest mass?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accrodion2">
+                            <div class="accordion-body card-body py-5 px-4">
+                                <ol>
+                                    <li>Turtle </li>
+                                    <li>Rabbit </li>
+                                    <li>Elephant</li>
+                                    <li>Zebra </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </body>
+</html>
+
+<!--
+    Accordion is a series of panels stacked on the top of each other.
+
+    Refer:
+    https://getbootstrap.com/docs/5.0/accordion/
+-->
